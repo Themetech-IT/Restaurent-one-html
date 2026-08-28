@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>About</title>
+
+		<!-- swiper css -->
+		<link
+			rel="stylesheet"
+			href="./assets/plugin/swiperjs/swiper-bundle.min.css"
+		/>
+
+		<!-- icon  -->
+		<script src="./assets/plugin/iconify/iconify-icon.min.js"></script>
+		<!-- favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+		<!-- bootstrap -->
+		<link
+			rel="stylesheet"
+			href="./assets/plugin/bootstrap/css/bootstrap.min.css"
+		/>
+
+		<!-- css -->
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+
+	<body>
+		<!-- header  -->
+		<header id="ru-header" class="ru-header white">
+			<div class="ru-container">
+				<div class="ru-header_inner">
+					<div class="ru-header_logo">
+						<a href="index.html">
+							<img id="logo" src="./assets/img/logo/logo-dark.png" alt="logo" />
+						</a>
+					</div>
+					<div class="ru-header_menus">
+						<ul class="ru-nav">
+							<li>
+								<div class="dropdown ru-nav-link">
+									<button
+										class="sub_drop"
+										type="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<span>Home</span>
+										<span class="ru_ic"
+											><iconify-icon
+												icon="akar-icons:triangle-up-fill"
+											></iconify-icon
+										></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li>
+											<a class="dropdown-item" href="./index.html">Home 1</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./index-2.html">Home 2</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a class="ru-nav-link active" href="./about-us.html"
+									>About Us</a
+								>
+							</li>
+							<li>
+								<a class="ru-nav-link" href="./service.html">Service</a>
+							</li>
+
+							<li>
+								<div class="dropdown ru-nav-link">
+									<button
+										class="sub_drop"
+										type="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<span>Pages</span>
+										<span class="ru_ic"
+											><iconify-icon
+												icon="akar-icons:triangle-up-fill"
+											></iconify-icon
+										></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li>
+											<a class="dropdown-item" href="./dishes-menu.html"
+												>Dish Menu</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./bar-menu.html"
+												>Bar Menu</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./wine-menu.html"
+												>Wine Menu</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./blog-detail.html"
+												>Blog Details</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./service-details.html"
+												>Service Details</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./coupon.html">Coupon</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./voucher.html">Voucher</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./voucher2.html"
+												>Voucher 2</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./table-reservation.html"
+												>Reservation-1</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./table-reservation-2.html"
+												>Reservation-2</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./service-reservation.html"
+												>Service Reservation</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./404.html">404</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./modal-up.html"
+												>Modal Pop-Up</a
+											>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li><a class="ru-nav-link" href="blog.html">Blog</a></li>
+						</ul>
+					</div>
+					<div class="ru-header_actions">
+						<ul class="ru-header_actions_list language-dp">
+							<li>
+								<div class="dropdown ru-header_actions_item">
+									<button
+										class=""
+										type="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<iconify-icon
+											class="translate_ic"
+											icon="iconoir:translate"
+										></iconify-icon>
+
+										<span class="ru_ic"
+											><iconify-icon
+												icon="akar-icons:triangle-down-fill"
+											></iconify-icon
+										></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="./#">En</a></li>
+										<li>
+											<a class="dropdown-item" href="./#">Bn</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a class="ru-header_actions_item rounded-outline-btn" href="#">
+									<span class="ru-ic"
+										><iconify-icon icon="heroicons:calendar"></iconify-icon
+									></span>
+									<span class="ru-tx-book">BOOK A TABLE</span>
+								</a>
+							</li>
+						</ul>
+						<div class="ru-header_mobile">
+							<button
+								type="button"
+								data-bs-toggle="offcanvas"
+								data-bs-target="#offcanvasRight"
+								aria-controls="offcanvasRight"
+								class="ru-header_mobile_btn"
+							>
+								<iconify-icon
+									icon="heroicons:adjustments-horizontal-16-solid"
+								></iconify-icon>
+							</button>
+						</div>
+						<div
+							class="offcanvas offcanvas-end mobile-sidebar-menus"
+							tabindex="-1"
+							id="offcanvasRight"
+							aria-labelledby="offcanvasRightLabel"
+						>
+							<div class="offcanvas-header">
+								<div class="ru-header_logo">
+									<img
+										id="logo"
+										src="./assets/img/logo/logo-dark.png"
+										alt="logo"
+									/>
+								</div>
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="offcanvas"
+									aria-label="Close"
+								></button>
+							</div>
+							<div class="offcanvas-body">
+								<ul id="mobile-menus">
+									<li>
+										<a class="item" href="#"
+											><span>Home</span>
+											<span class="ru-ic">
+												<iconify-icon
+													icon="akar-icons:triangle-down-fill"
+												></iconify-icon> </span
+										></a>
+										<ul class="sub-menu">
+											<li>
+												<a class="sub-item" href="./index.html">Home 1</a>
+											</li>
+											<li>
+												<a class="sub-item" href="./index-2.html">Home 2</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a class="item active" href="./about-us.html">About Us</a>
+									</li>
+									<li><a class="item" href="./service.html">Service</a></li>
+									<li><a class="item" href="./blog.html">Blog</a></li>
+
+									<li>
+										<a class="item" href="#"
+											><span>Pages</span>
+											<span class="ru-ic">
+												<iconify-icon
+													icon="akar-icons:triangle-down-fill"
+												></iconify-icon> </span
+										></a>
+										<ul class="sub-menu">
+											<li>
+												<a class="sub-item" href="./dishes-menu.html"
+													>Dish Menu</a
+												>
+											</li>
+											<li>
+												<a class="sub-item" href="./bar-menu.html">Bar Menu</a>
+											</li>
+											<li>
+												<a class="sub-item" href="./wine-menu.html"
+													>Wine Menu</a
+												>
+											</li>
+											<li>
+												<a class="sub-item" href="./blog-detail.html"
+													>Blog Details</a
+												>
+											</li>
+											<li>
+												<a class="sub-item" href="./service-details.html"
+													>Service Details</a
+												>
+											</li>
+											<li>
+												<a class="sub-item" href="./coupon.html">Coupon</a>
+											</li>
+											<li>
+												<a class="sub-item" href="./voucher.html">Voucher</a>
+											</li>
+											<li>
+												<a class="sub-item" href="./voucher2.html">Voucher 2</a>
+											</li>
+											<li>
+												<a class="sub-item" href="./table-reservation.html"
+													>Reservation-1</a
+												>
+											</li>
+											<li>
+												<a class="sub-item" href="./table-reservation-2.html"
+													>Reservation-2</a
+												>
+											</li>
+											<li>
+												<a class="sub-item" href="./service-reservation.html"
+													>Service Reservation</a
+												>
+											</li>
+											<li>
+												<a class="sub-item" href="./404.html">404</a>
+											</li>
+											<li>
+												<a class="sub-item" href="./modal-up.html"
+													>Modal Pop-Up</a
+												>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- main  -->
+		<main>
+			<section class="ru-breadcrumb">
+				<h4 class="ru-breadcrumb_title">ABOUT US</h4>
+				<ul class="ru-breadcrumb_lists">
+					<li><a class="item" href="#">Home</a></li>
+					<li><a class="item active" href="#">ABOUT</a></li>
+				</ul>
+			</section>
+
+			<!-- hero section  -->
+			<section class="ru-about-hero">
+				<div class="ru-container">
+					<div class="ru-about-hero_content">
+						<div class="main-img">
+							<img src="./assets/img/about/hero.png" alt="image" />
+						</div>
+						<div class="ru-about-hero_wraps">
+							<div>
+								<h3 class="h-text">
+									<span class="h-b">16+</span
+									><span class="h-n">Years of Experience</span>
+								</h3>
+								<p class="h-desc">
+									We are a Shp brands building insightful strategy, creating
+									unique designs helping
+								</p>
+							</div>
+							<div>
+								<h3 class="h-text">
+									<span class="h-b">16+</span
+									><span class="h-n">Years of Experience</span>
+								</h3>
+								<p class="h-desc">
+									We are a Shp brands building insightful strategy, creating
+									unique designs helping
+								</p>
+							</div>
+						</div>
+						<div class="ru-about_hero-image">
+							<img
+								src="./assets/img/about/16-yr.png"
+								class="yr-16"
+								alt="hero-image"
+							/>
+							<img
+								src="./assets/img/about/hero-2.jpg"
+								class="hero-2"
+								alt="hero-image"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="about_res">
+				<div class="about_us_res ru-container">
+					<div class="ab-warp">
+						<div class="left">
+							<div class="about_res_img">
+								<img src="assets/img/about/about_res_img.png" alt="" />
+							</div>
+						</div>
+						<div class="right">
+							<div class="about_us_res_content">
+								<div class="title">
+									<p class="sub_title">ABOUT RESTAURANT</p>
+									<h4>
+										EXPERIENCE ORIGINAL FOOD TESTE OF <br />
+										LISOBA.
+									</h4>
+								</div>
+								<div class="desc">
+									<p class="paragraph">
+										Lorem ipsum dolor sit amet adipiscing elit do eiusmod tempor
+										incididunt ut labore et dolore magna minim veniam nostrud
+										exercitation.
+									</p>
+									<div class="desc_item">
+										<div class="desc_item1">
+											<div class="ru-amenities_content-list-item">
+												<span class="icon"
+													><iconify-icon
+														icon="heroicons:check-circle-20-solid"
+													></iconify-icon
+												></span>
+												<span>Cozy Amenities and Bar</span>
+											</div>
+											<div class="ru-amenities_content-list-item mt-3 mt-lg-4">
+												<span class="icon"
+													><iconify-icon
+														icon="heroicons:check-circle-20-solid"
+													></iconify-icon
+												></span>
+												<span>Asty Culinary For Food Lovers</span>
+											</div>
+										</div>
+										<div class="verticle_rule"></div>
+										<div class="desc_item2 align-items-center">
+											<div class="desc_item2_img">
+												<img src="assets/img/about/sokina.png" alt="" />
+											</div>
+											<div class="desc_item2_content">
+												<h3 class="title-ceo">SOKINA HASAN</h3>
+												<span>Founder & CEO</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="about_us_res_btn">
+									<a href="#"
+										>CONTACT WITH US
+										<span
+											><iconify-icon
+												icon="heroicons-outline:arrow-narrow-right"
+											></iconify-icon></span
+									></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- about-us  -->
+			<!-- <section class="ru-about-us about-us-ctx">
+				<div class="ru-about-us_content ru-container">
+					<div class="ru-about-us_content-left">
+						<img src="./assets/img/about/about-us.png" alt="about-us" />
+					</div>
+					<div class="ru-about-us_content-right">
+						<h1 class="ru-about-us_content-right_title">
+							<span class="icon"
+								><iconify-icon icon="fa6-solid:minus"></iconify-icon></span
+							><span>ABOUT RESTAURANT</span>
+						</h1>
+						<h2 class="ru-about-us_content-right_heading">
+							EXPERIENCE ORIGINAL FOOD TESTE OF Lisboa.
+						</h2>
+						<p class="ru-about-us_content-right_desc">
+							Lorem ipsum dolor sit amet adipiscing elit do eiusmod tempor
+							incididunt ut labore et dolore magna minim veniam nostrud
+							exercitation.
+						</p>
+						<div class="ru-about-us_content-right_actions">
+							<a class="ru-btn fillUp" href="#"
+								><span>CONTACT WITH US</span>
+								<span class="icon"
+									><iconify-icon
+										icon="icon-park-outline:arrow-right"
+									></iconify-icon></span
+							></a>
+						</div>
+					</div>
+				</div>
+			</section> -->
+
+			<!-- trending  -->
+			<section class="ru-trending">
+				<div class="ru-container">
+					<div class="ru-trending-slider">
+						<div class="ru-header-text" style="max-width: 630px">
+							<h4 class="ru-header-text_highlight">
+								<span class="icon"
+									><iconify-icon icon="fa6-solid:minus"></iconify-icon></span
+								><span> OUR TRENDING </span>
+							</h4>
+							<h1 class="ru-header-text_title">Fresh & Better Foods For You</h1>
+							<p class="ru-header-text_desc">
+								There are many variations of passages of Lorem Ipsum form any
+								injected humour, or randomized words which don't look slightly
+								believable.
+							</p>
+							<div class="slider-arrow">
+								<button id="custom-prev" type="button" class="slider-arrow-2">
+									<iconify-icon
+										icon="heroicons:arrow-long-left-20-solid"
+									></iconify-icon>
+								</button>
+								<button id="custom-next" type="button" class="slider-arrow-2">
+									<iconify-icon
+										icon="heroicons:arrow-long-right-20-solid"
+									></iconify-icon>
+								</button>
+							</div>
+						</div>
+						<div class="slider-box-trending">
+							<div class="swiper mySwiper-about">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="ru-articles_item trending1_img" style="max-height: 397px">
+											<p class="ru-articles_item-badge">Restaurant</p>
+											<div>
+												<a href="" class="ru-articles_item-title">
+													Never eat more than you can life.
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="ru-articles_item trending2_img" style="max-height: 397px">
+											<p class="ru-articles_item-badge">Bar</p>
+											<div>
+												<a href="" class="ru-articles_item-title">
+													Never eat more than you can life.
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="ru-articles_item trending3_img" style="max-height: 397px">
+											<p class="ru-articles_item-badge">Restaurant</p>
+											<div>
+												<a href="" class="ru-articles_item-title">
+													Never eat more than you can life.
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- chefs box  -->
+			<section class="ru-chefs">
+				<div class="ru-container">
+					<div class="ru-header-text">
+						<h1 class="ru-header-text_title">OUR PROFESSIONAL CHEFS</h1>
+						<p class="ru-header-text_desc">
+							A professional networking platform for chefs where they can create
+							a profile, showcase their work, connect with other industry
+							professionals, and explore job opportunities.
+						</p>
+					</div>
+
+					<div class="ru-chefs_container">
+						<div class="ru-chefs_item">
+							<div class="img-box">
+								<a href="">
+									<img src="./assets/img/chefs/chef-1.jpg" alt="chefs" />
+								</a>
+							</div>
+							<div class="item-content">
+								<p class="role">Main Chef</p>
+								<hr />
+								<a href="">
+									<p class="name">Mark Hennery Tix </p>
+								</a>
+
+								<p class="exp">
+									<span class="icon"
+										><iconify-icon
+											icon="material-symbols-light:circle"
+										></iconify-icon
+									></span>
+									<span>12 year Experience</span>
+								</p>
+							</div>
+						</div>
+						<div class="ru-chefs_item">
+							<div class="img-box">
+								<a href="">
+									<img src="./assets/img/chefs/2.png" alt="chefs" />
+								</a>
+							</div>
+							<div class="item-content">
+								<p class="role">Master Chef</p>
+								<hr />
+								<a href="">
+									<p class="name">Dylan Meringue</p>
+								</a>
+
+								<p class="exp">
+									<span class="icon"
+										><iconify-icon
+											icon="material-symbols-light:circle"
+										></iconify-icon
+									></span>
+									<span>12 year Experience</span>
+								</p>
+							</div>
+						</div>
+						<div class="ru-chefs_item">
+							<div class="img-box">
+								<a href="">
+									<img src="./assets/img/chefs/3.png" alt="chefs" />
+								</a>
+							</div>
+							<div class="item-content">
+								<p class="role">Executive Chef</p>
+								<hr />
+								<a href="">
+									<p class="name">Pelican Steve</p>
+								</a>
+
+								<p class="exp">
+									<span class="icon"
+										><iconify-icon
+											icon="material-symbols-light:circle"
+										></iconify-icon
+									></span>
+									<span>12 year Experience</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="d-flex justify-content-center submit_div">
+						<a href="" class="ru-button-full">
+							<span>VIEW MORE</span>
+							<span class="icon"
+								><iconify-icon
+									icon="heroicons:arrow-long-right-16-solid"
+								></iconify-icon
+							></span>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- why us  -->
+			<section class="ru-why-us">
+				<div class="ru-container">
+					<div class="ru-header-text">
+						<h4 class="ru-header-text_highlight">
+							<span class="icon"
+								><iconify-icon icon="fa6-solid:minus"></iconify-icon></span
+							><span> WHY VISIT US</span>
+						</h4>
+						<h1 class="ru-header-text_title">
+							We Provide Organic Food & Best Facilities
+						</h1>
+						<p class="ru-header-text_desc">
+							Here are many variations of passages of Lorem Ipsum available but
+							the majority have suffered alteration in some form from injected
+							humour, or randomized words which don't looking even slightly
+							believable. If you are going have suffered
+						</p>
+					</div>
+
+					<div class="ru-why-us-box">
+						<div class="item">
+							<div class="icon">
+								<img src="./assets/img/icon/why-icon-1.svg" alt="" />
+							</div>
+							<div class="content">
+								<h3 class="title">Menu for every taste</h3>
+								<p class="desc">
+									Dolor sit amet, consectetur adipisicing elit et molestias
+									possimus
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="icon">
+								<img src="./assets/img/icon/why-icon-3.svg" alt="" />
+							</div>
+							<div class="content">
+								<h3 class="title">Menu for every taste</h3>
+								<p class="desc">
+									Dolor sit amet, consectetur adipisicing elit et molestias
+									possimus
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="icon">
+								<img src="./assets/img/icon/why-icon-2.svg" alt="" />
+							</div>
+							<div class="content">
+								<h3 class="title">Menu for every taste</h3>
+								<p class="desc">
+									Dolor sit amet, consectetur adipisicing elit et molestias
+									possimus
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ru-opening-time">
+				<div class="ru-container">
+					<div class="wrap">
+						<div
+							class="left"
+							style="background-image: url('./assets/img/about/bg-time.jpg')"
+						>
+							<h4 class="tx-highlight">
+								<span class="icon"
+									><iconify-icon icon="fa6-solid:minus"></iconify-icon></span
+								><span>OPENING TIME</span>
+							</h4>
+							<h3 class="tx-title">Working hours</h3>
+							<p class="tx-desc">
+								Rolorem, beatae dolorum, praesentium itaque et quam quaerat.
+							</p>
+							<div class="action">
+								<a href="#" class="open-btn">Reservation</a>
+								<a href="#" class="tx-btn">Contact Us</a>
+							</div>
+						</div>
+						<div class="right">
+							<ul class="ru-footer-hours">
+								<li>
+									<div class="list">
+										<p class="day">
+											<span class="icon"
+												><iconify-icon
+													icon="radix-icons:dot-filled"
+												></iconify-icon
+											></span>
+											<span>Sunday - Thursday</span>
+										</p>
+										<p class="time">08:00 am - 09:00pm</p>
+									</div>
+								</li>
+								<li>
+									<div class="list">
+										<p class="day">
+											<span class="icon"
+												><iconify-icon
+													icon="radix-icons:dot-filled"
+												></iconify-icon
+											></span>
+											<span>Sunday - Thursday</span>
+										</p>
+										<p class="time">08:00 am - 09:00pm</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- about- us counter  -->
+			<section class=" ">
+				<div class="ru-container">
+					<ul class="ru-inc-box">
+						<li class="ru-counter_text-dt">
+							<div class="icons_texts-dt">
+								<p class="icons_texts-dt_text">
+									All the work we have done has been successfully completed
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="ru-list-counter">
+								<p class="ru-list-counter_inc">200+</p>
+								<p class="ru-list-counter_text">VISITORS DAILY</p>
+							</div>
+						</li>
+						<li>
+							<div class="ru-list-counter">
+								<p class="ru-list-counter_inc">200+</p>
+								<p class="ru-list-counter_text">VISITORS DAILY</p>
+							</div>
+						</li>
+						<li>
+							<div class="ru-list-counter">
+								<p class="ru-list-counter_inc">200+</p>
+								<p class="ru-list-counter_text">VISITORS DAILY</p>
+							</div>
+						</li>
+						<li>
+							<div class="ru-list-counter">
+								<p class="ru-list-counter_inc">200+</p>
+								<p class="ru-list-counter_text">VISITORS DAILY</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- marquee slide  -->
+			<section class="ru-marquee">
+				<div class="ru-marquee-slide">
+					<h1 class="ru-marquee-slide_text">
+						<span>WE</span>
+						<span class="ru-outline-text">ARE</span>
+						<span>BEST</span>
+						<span>WE</span>
+						<span class="ru-outline-text">ARE</span>
+						<span>BEST</span>
+						<span>WE</span>
+						<span class="ru-outline-text">ARE</span>
+						<span>BEST</span>
+					</h1>
+				</div>
+				<div class="ru-bg-icon-1">
+					<img src="./assets/img/icon/tree-bg-icon.png" alt="icon" />
+				</div>
+			</section>
+
+			<!-- clients review  -->
+			<section class="ru-clients">
+				<div class="ru-header-text">
+					<h1 class="ru-header-text_title">What Our Clients Say</h1>
+					<p class="ru-header-text_desc">
+						Sed gravida nisl a porta tincidunt. Integer aliquam nisi sit amet
+						magna suscipit,
+					</p>
+				</div>
+				<div class="ru-clients_container">
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="ru-clients-reviews">
+									<div class="ru-clients-reviews-icon">
+										<iconify-icon icon="fa6-solid:quote-right"></iconify-icon>
+									</div>
+									<p class="ru-clients-reviews-text">
+										A cozy gem tucked away in the heart of the city, this wine
+										and snack bar offers a delightful escape from the hustle and
+										bustle. The selection of wines is impressive, catering to
+										both connoisseurs and casual drinkers alike.
+									</p>
+									<div class="ru-clients-reviews-user">
+										<a href=""
+											><img
+												src="./assets/img/clients/1.png"
+												alt="client"
+										/></a>
+										<a href=""
+											><img
+												src="./assets/img/clients/2.png"
+												alt="client"
+										/></a>
+										<a href=""
+											><img
+												src="./assets/img/clients/3.jpg"
+												alt="client"
+										/></a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="ru-clients-reviews">
+									<div class="ru-clients-reviews-icon">
+										<iconify-icon icon="fa6-solid:quote-right"></iconify-icon>
+									</div>
+									<p class="ru-clients-reviews-text">
+										A cozy gem tucked away in the heart of the city, this wine
+										and snack bar offers a delightful escape from the hustle and
+										bustle. The selection of wines is impressive, catering to
+										both connoisseurs and casual drinkers alike.
+									</p>
+									<div class="ru-clients-reviews-user">
+										<a href=""
+											><img
+												src="./assets/img/clients/1.png"
+												alt="client"
+										/></a>
+										<a href=""
+											><img
+												src="./assets/img/clients/2.png"
+												alt="client"
+										/></a>
+										<a href=""
+											><img
+												src="./assets/img/clients/3.jpg"
+												alt="client"
+										/></a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="ru-clients-reviews">
+									<div class="ru-clients-reviews-icon">
+										<iconify-icon icon="fa6-solid:quote-right"></iconify-icon>
+									</div>
+									<p class="ru-clients-reviews-text">
+										A cozy gem tucked away in the heart of the city, this wine
+										and snack bar offers a delightful escape from the hustle and
+										bustle. The selection of wines is impressive, catering to
+										both connoisseurs and casual drinkers alike.
+									</p>
+									<div class="ru-clients-reviews-user">
+										<a href=""
+											><img
+												src="./assets/img/clients/1.png"
+												alt="client"
+										/></a>
+										<a href=""
+											><img
+												src="./assets/img/clients/2.png"
+												alt="client"
+										/></a>
+										<a href=""
+											><img
+												src="./assets/img/clients/3.jpg"
+												alt="client"
+										/></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- footer  -->
+		<footer class="ru-footer">
+			<div class="ru-container">
+				<div class="ru-footer-top">
+					<div class="ru-footer-top_left">
+						<div class="ru-footer-top_left-logo">
+							<img src="./assets/img/logo/logo-white.png" alt="logo" />
+						</div>
+						<p class="ru-footer-top_left-text">
+							"RESTURENT" is a culinary oasis dedicated to crafting delectable
+							experiences for food enthusiasts worldwide. From savory delights
+							to sweet indulgences, our company specializes in creating gourmet
+							treats that tantalize taste buds and ignite culinary passions.
+						</p>
+					</div>
+					<div class="ru-footer-top_right">
+						<div class="ru-footer-links">
+							<h3 class="ru-footer-title">Quick Links</h3>
+							<ul class="ru-footer-list">
+								<li><a class="list" href="./about-us.html">About</a></li>
+								<li><a class="list" href="./blog.html">Blog</a></li>
+								<li><a class="list" href="./service.html">Our Service</a></li>
+								<li>
+									<a class="list" href="./dishes-menu.html">Dishes service</a>
+								</li>
+								<li>
+									<a class="list" href="./service.html">Wishes service</a>
+								</li>
+							</ul>
+						</div>
+						<div class="ru-footer-links opening-hours">
+							<h3 class="ru-footer-title">Opening Hours</h3>
+							<ul class="ru-footer-hours">
+								<li>
+									<div class="list">
+										<p class="day">
+											<span class="icon"
+												><iconify-icon
+													icon="radix-icons:dot-filled"
+												></iconify-icon
+											></span>
+											<span>Sunday - Thursday</span>
+										</p>
+										<p class="time">08:00 am - 09:00pm</p>
+									</div>
+								</li>
+								<li>
+									<div class="list">
+										<p class="day">
+											<span class="icon"
+												><iconify-icon
+													icon="radix-icons:dot-filled"
+												></iconify-icon
+											></span>
+											<span>Sunday - Thursday</span>
+										</p>
+										<p class="time">08:00 am - 09:00pm</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="ru-footer-links contact">
+							<h3 class="ru-footer-title">Contact</h3>
+							<ul class="ru-footer-contact">
+								<li>
+									<a href="#">
+										<div class="lists">
+											<p class="icon">
+												<iconify-icon icon="heroicons:envelope"></iconify-icon>
+											</p>
+											<div class="content">
+												<p class="title">Email:</p>
+												<p class="value">flashmessage@gmail.com</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="lists">
+											<p class="icon">
+												<iconify-icon icon="heroicons:map-pin"></iconify-icon>
+											</p>
+											<div class="content">
+												<p class="title">Location:</p>
+												<p class="value">Dhaka, Bangladesh</p>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<!-- news letter  -->
+							<div class="fu-news-sub">
+								<form action="">
+									<h3 class="fu-news-sub-title">news letter</h3>
+
+									<div class="fu-news-sub-wrap">
+										<input
+											class="fu-news-sub-input"
+											type="email"
+											placeholder="Enter your email"
+										/>
+										<button type="submit" class="fu-news-sub-btn">
+											<iconify-icon icon="carbon:send-filled"></iconify-icon>
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ru-footer-bottom">
+					<p class="ru-footer-bottom_copy">© Copyright 2024 RESTAURANT</p>
+					<ul class="ru-footer-bottom_social">
+						<li>
+							<a href="#">
+								<iconify-icon icon="ri:facebook-fill"></iconify-icon>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<iconify-icon icon="ri:linkedin-fill"></iconify-icon>
+							</a>
+						</li>
+						<li>
+							<a href="#"> <iconify-icon icon="mdi:twitter"></iconify-icon> </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<!-- jquery  -->
+		<script src="./assets/plugin/jquery/jquery-3.7.1.min.js"></script>
+
+		<!-- bootstrap -->
+		<script src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+		<!-- swiperjs -->
+		<script src="./assets/plugin/swiperjs/swiper-bundle.min.js"></script>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				var swiper2 = new Swiper('.mySwiper-about', {
+					slidesPerView: 2,
+					spaceBetween: 10,
+					breakpoints: {
+						1023: {
+							slidesPerView: 2,
+							spaceBetween: 30,
+						},
+					},
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+				});
+
+				document
+					.getElementById('custom-next')
+					.addEventListener('click', function () {
+						swiper2.slideNext();
+					});
+
+				document
+					.getElementById('custom-prev')
+					.addEventListener('click', function () {
+						swiper2.slidePrev();
+					});
+			});
+		</script>
+
+		<!-- js  -->
+		<script src="./assets/js/script.js"></script>
+	</body>
+</html>

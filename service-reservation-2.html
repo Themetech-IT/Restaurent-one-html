@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SERVICE RESERVATION2</title>
+
+		<!-- swiper css -->
+		<link
+			rel="stylesheet"
+			href="./assets/plugin/swiperjs/swiper-bundle.min.css"
+		/>
+		<!--date picker css -->
+		<link rel="stylesheet" href="assets/plugin/date-picker/css/date-picker.min.css">
+		<link rel="stylesheet" href="/assets/plugin/time-picker/queryscript.netcssjquerysctipttop.css">
+		<!-- time picker css -->
+		<link href="assets/plugin/time-picker/mdtimepicker.css" rel="stylesheet" type="text/css">
+		<!-- icon  -->
+		<script src="./assets/plugin/iconify/iconify-icon.min.js"></script>
+		<!-- favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+		<!-- bootstrap -->
+		<link
+			rel="stylesheet"
+			href="./assets/plugin/bootstrap/css/bootstrap.min.css"
+		/>
+
+		<!-- css -->
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+
+	<body>
+		<!-- header  -->
+		<header id="ru-header" class="ru-header">
+			<div class="ru-container">
+				<div class="ru-header_inner">
+					<div class="ru-header_logo">
+						<a href="index.html">
+							<img
+								id="logo"
+								src="./assets/img/logo/logo-white.png"
+								alt="logo"
+							/>
+						</a>
+					</div>
+					<div class="ru-header_menus">
+						<ul class="ru-nav">
+							<li>
+								<div class="dropdown ru-nav-link">
+									<button
+										class="sub_drop"
+										type="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<span>Home</span>
+										<span class="ru_ic"
+											><iconify-icon
+												icon="akar-icons:triangle-up-fill"
+											></iconify-icon
+										></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li>
+											<a class="dropdown-item" href="./index.html">Home 1</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./index-2.html">Home 2</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a class="ru-nav-link" href="./about-us.html">About Us</a>
+							</li>
+							<li>
+								<a class="ru-nav-link" href="./service.html">Service</a>
+							</li>
+
+							<li>
+								<div class="dropdown ru-nav-link active">
+									<button
+										class="sub_drop"
+										type="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<span>Pages</span>
+										<span class="ru_ic"
+											><iconify-icon
+												icon="akar-icons:triangle-up-fill"
+											></iconify-icon
+										></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li>
+											<a class="dropdown-item" href="./dishes-menu.html"
+												>Dish Menu</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./bar-menu.html"
+												>Bar Menu</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./wine-menu.html"
+												>Wine Menu</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./blog-detail.html"
+												>Blog Details</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./service-details.html"
+												>Service Details</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./coupon.html">Coupon</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./voucher.html">Voucher</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./voucher2.html"
+												>Voucher 2</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./table-reservation.html"
+												>Reservation-1</a
+											>
+										</li>
+										<li>
+											<a
+												class="dropdown-item active"
+												href="./table-reservation-2.html"
+												>Reservation-2</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./service-reservation.html"
+												>Service Reservation</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./404.html">404</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./modal-up.html"
+												>Modal Pop-Up</a
+											>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li><a class="ru-nav-link" href="blog.html">Blog</a></li>
+						</ul>
+					</div>
+					<div class="ru-header_actions">
+						<ul class="ru-header_actions_list language-dp">
+							<li>
+								<div class="dropdown ru-header_actions_item">
+									<button
+										class=""
+										type="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<iconify-icon
+											class="translate_ic"
+											icon="iconoir:translate"
+										></iconify-icon>
+
+										<span class="ru_ic"
+											><iconify-icon
+												icon="akar-icons:triangle-down-fill"
+											></iconify-icon
+										></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="./#">En</a></li>
+										<li>
+											<a class="dropdown-item" href="./#">Bn</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a class="ru-header_actions_item rounded-outline-btn" href="#">
+									<span class="ru-ic"
+										><iconify-icon icon="heroicons:calendar"></iconify-icon
+									></span>
+									<span class="ru-tx-book">BOOK A TABLE</span>
+								</a>
+							</li>
+						</ul>
+						<div class="ru-header_mobile">
+							<button
+								type="button"
+								data-bs-toggle="offcanvas"
+								data-bs-target="#offcanvasRight"
+								aria-controls="offcanvasRight"
+								class="ru-header_mobile_btn"
+							>
+								<iconify-icon
+									icon="heroicons:adjustments-horizontal-16-solid"
+								></iconify-icon>
+							</button>
+						</div>
+						<div
+							class="offcanvas offcanvas-end mobile-sidebar-menus"
+							tabindex="-1"
+							id="offcanvasRight"
+							aria-labelledby="offcanvasRightLabel"
+						>
+							<div class="offcanvas-header">
+								<div class="ru-header_logo">
+									<img
+										id="logo"
+										src="./assets/img/logo/logo-dark.png"
+										alt="logo"
+									/>
+								</div>
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="offcanvas"
+									aria-label="Close"
+								></button>
+							</div>
+							<div class="offcanvas-body">
+								<ul id="mobile-menus">
+									<li>
+										<a class="item" href="#"
+											><span>Home</span>
+											<span class="ru-ic">
+												<iconify-icon
+													icon="akar-icons:triangle-down-fill"
+												></iconify-icon> </span
+										></a>
+										<ul class="sub-menu">
+											<li>
+												<a class="sub-item" href="./index.html">Home 1</a>
+											</li>
+											<li>
+												<a class="sub-item" href="./index-2.html">Home 2</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a class="item" href="./about-us.html">About Us</a>
+									</li>
+									<li><a class="item" href="./service.html">Service</a></li>
+									<li><a class="item" href="./blog.html">Blog</a></li>
+
+									<li>
+										<a class="item active" href="#"
+											><span>Pages</span>
+											<span class="ru-ic">
+												<iconify-icon
+													icon="akar-icons:triangle-down-fill"
+												></iconify-icon> </span
+										></a>
+										<ul class="sub-menu">
+											<li>
+												<a class="sub-item" href="./dishes-menu.html"
+													>Dish Menu</a
+												>
+											</li>
+											<li>
+												<a class="sub-item" href="./bar-menu.html">Bar Menu</a>
+											</li>
+											<li>
+												<a class="sub-item" href="./wine-menu.html"
+													>Wine Menu</a
+												>
+											</li>
+											<li>
+												<a class="sub-item" href="./blog-detail.html"
+													>Blog Details</a
+												>
+											</li>
+											<li>
+												<a class="sub-item" href="./service-details.html"
+													>Service Details</a
+												>
+											</li>
+											<li>
+												<a class="sub-item" href="./coupon.html">Coupon</a>
+											</li>
+											<li>
+												<a class="sub-item" href="./voucher.html">Voucher</a>
+											</li>
+											<li>
+												<a class="sub-item" href="./voucher2.html">Voucher 2</a>
+											</li>
+											<li>
+												<a class="sub-item" href="./table-reservation.html"
+													>Reservation-1</a
+												>
+											</li>
+											<li>
+												<a
+													class="sub-item active"
+													href="./table-reservation-2.html"
+													>Reservation-2</a
+												>
+											</li>
+											<li>
+												<a class="sub-item" href="./service-reservation.html"
+													>Service Reservation</a
+												>
+											</li>
+											<li>
+												<a class="sub-item" href="./404.html">404</a>
+											</li>
+											<li>
+												<a class="sub-item" href="./modal-up.html"
+													>Modal Pop-Up</a
+												>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- main  -->
+		<main>
+			<section
+				class="ru-breadcrumb text_clr"
+				style="background-image: url(/assets/img/s_reserve/s_bg.png)"
+			>
+				<h4 class="ru-breadcrumb_title">SERVICE RESERVATION</h4>
+				<ul class="ru-breadcrumb_lists">
+					<li><a class="item hm_clr" href="#">Home</a></li>
+					<li><a class="item active" href="#">Services</a></li>
+				</ul>
+			</section>
+
+			<!-- reservation form -->
+			<section class="ru-reservation">
+				<div class="ru-container">
+					<div class="ru-header-text">
+						<h1 class="ru-header-text_title">reserve a Service</h1>
+						<p class="ru-header-text_desc">
+							CALL US +1 777 000 111 OR COMPLETE THE FORM BELOW
+						</p>
+					</div>
+					<form autocomplete="off" action="">
+						<div class="ru-reservation-form">
+							<div class="ru-form_item">
+								<label for="date">Date</label>
+								<div class="ru-form_item-input">
+									<input type="text" placeholder="Pick a date" class="datepicker-here form-control ru-input" id="today" name="today" data-language="en" value=""/>
+									<span class="icon"
+										><iconify-icon icon="heroicons:calendar-days"></iconify-icon
+									></span>
+								</div>
+							</div>
+							<div class="ru-form_item">
+								<label for="name">Your Name</label>
+								<div class="ru-form_item-input">
+									<input
+										placeholder="Full name"
+										type="text"
+										id="name"
+										class="ru-input"
+									/>
+									<span class="icon"
+										><iconify-icon icon="heroicons:pencil-square"></iconify-icon
+									></span>
+								</div>
+							</div>
+							<div class="ru-form_item">
+								<label for="email">Email Address</label>
+								<div class="ru-form_item-input">
+									<input
+										placeholder="Enter Email ID"
+										type="email"
+										id="email"
+										class="ru-input"
+									/>
+									<span class="icon"
+										><iconify-icon icon="heroicons:envelope"></iconify-icon
+									></span>
+								</div>
+							</div>
+							<div class="ru-form_item">
+								<label for="guests">Guests</label>
+								<div class="ru-form_item-input">
+									<input
+										placeholder="Full name"
+										type="text"
+										id="guests"
+										class="ru-input"
+									/>
+									<span class="icon"
+										><iconify-icon icon="heroicons:user-group"></iconify-icon
+									></span>
+								</div>
+							</div>
+							<div class="ru-form_item">
+								<label for="email">Time</label>
+								<div class="ru-form_item-input">
+									<input
+										placeholder="Pick a Time"
+										type="text"
+										id="timepicker"
+										class="ru-input"
+									/>
+									<span class="icon"
+										><iconify-icon icon="heroicons:clock"></iconify-icon
+									></span>
+								</div>
+							</div>
+							<div class="ru-form_item">
+								<label for="phone">Phone Number</label>
+								<div class="ru-form_item-input">
+									<input
+										placeholder="Pick a date"
+										type="text"
+										id="phone"
+										class="ru-input"
+									/>
+									<span class="icon"
+										><iconify-icon icon="heroicons:phone"></iconify-icon
+									></span>
+								</div>
+							</div>
+							<div class="ru-form_item">
+								<label for="service-type">Service type</label>
+								<div class="ru-form_item-input">
+									<select
+										class="ru-input"
+										name="service-type"
+										id="service-type"
+									>
+										<option value="1">Birthday</option>
+										<option value="">Car</option>
+										<option value="">Car</option>
+									</select>
+								</div>
+							</div>
+							<div class="ru-form_item">
+								<label for="phone">Guests</label>
+								<div class="ru-form_item-input">
+									<input
+										placeholder="Full Name"
+										type="text"
+										id="phone"
+										class="ru-input"
+									/>
+									<span class="icon"
+										><iconify-icon icon="heroicons:user-group"></iconify-icon
+									></span>
+								</div>
+							</div>
+							<div class="ru-package-wrapper span-2">
+								<div>
+									<input
+										hidden
+										type="radio"
+										id="package0"
+										name="package"
+										value="Car"
+										checked
+									/>
+									<label for="package0">
+										<div class="ru-form_pack">
+											<div class="icon">
+												<img src="./assets/img/package/package-1.png" alt="" />
+											</div>
+											<div class="content">
+												<h6 class="p-title">Birthday package 01</h6>
+												<p class="p-desc">USD$100</p>
+											</div>
+										</div>
+									</label>
+								</div>
+								<div>
+									<input
+										hidden
+										type="radio"
+										id="package1"
+										name="package"
+										value="Car"
+									/>
+									<label for="package1">
+										<div class="ru-form_pack">
+											<div class="icon">
+												<img src="./assets/img/package/package-1.png" alt="" />
+											</div>
+											<div class="content">
+												<h6 class="p-title">Birthday package 01</h6>
+												<p class="p-desc">USD$100</p>
+											</div>
+										</div>
+									</label>
+								</div>
+								<div>
+									<input
+										hidden
+										type="radio"
+										id="package2"
+										name="package"
+										value="Car"
+									/>
+									<label for="package2">
+										<div class="ru-form_pack">
+											<div class="icon">
+												<img src="./assets/img/package/package-1.png" alt="" />
+											</div>
+											<div class="content">
+												<h6 class="p-title">Birthday package 01</h6>
+												<p class="p-desc">USD$100</p>
+											</div>
+										</div>
+									</label>
+								</div>
+								<div>
+									<input
+										hidden
+										type="radio"
+										id="package3"
+										name="package"
+										value="Car"
+									/>
+									<label for="package3">
+										<div class="ru-form_pack">
+											<div class="icon">
+												<img src="./assets/img/package/package-1.png" alt="" />
+											</div>
+											<div class="content">
+												<h6 class="p-title">Birthday package 01</h6>
+												<p class="p-desc">USD$100</p>
+											</div>
+										</div>
+									</label>
+								</div>
+							</div>
+							<div class="ru-form_item span-2">
+								<label for="description">Description</label>
+								<div class="ru-form_item-input">
+									<textarea
+										class="ru-input"
+										name=""
+										id="description"
+										rows="4"
+										style="height: auto"
+										placeholder="Type here ..."
+									></textarea>
+									<span class="icon"></span>
+								</div>
+							</div>
+							<div class="d-flex justify-content-center submit_div span-2">
+								<button type="submit" class="ru-button-full">
+									<span>Book a Table</span>
+									<span class="icon"
+										><iconify-icon
+											icon="heroicons:arrow-long-right-16-solid"
+										></iconify-icon
+									></span>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="ru-reservation-bg-img">
+					<img src="./assets/img/icon/reservation-bg.png" alt="icon" />
+				</div>
+			</section>
+
+			<!-- Contact  -->
+			<section class="ru-why-us">
+				<div class="ru-container">
+					<div class="ru-header-text">
+						<h1 class="ru-header-text_title">Contact us</h1>
+						<p class="ru-header-text_desc">
+							Quaerat debitis, vel, sapiente dicta sequi labore porro pariatur
+							harum expedita.
+						</p>
+					</div>
+
+					<div class="ru-why-us-box">
+						<div class="item item_bg">
+							<div class="icon">
+								<img src="./assets/img/icon/why-icon-1.svg" alt="" />
+							</div>
+							<div class="content">
+								<h3 class="title">Write Us</h3>
+								<p class="desc">
+									<span class="m1">spainfo@tastyc.com</span>
+									<span class="m2">Flashmessage@tastyc.com</span>
+								</p>
+							</div>
+						</div>
+						<div class="item item_bg">
+							<div class="icon">
+								<img src="./assets/img/icon/why-icon-3.svg" alt="" />
+							</div>
+							<div class="content">
+								<h3 class="title">Call Us</h3>
+								<p class="desc">
+									<span class="m1">+76 (094) 754 43 71</span>
+									<span class="m2">+76 (093) 753 43 72</span>
+								</p>
+							</div>
+						</div>
+						<div class="item item_bg">
+							<div class="icon">
+								<img src="./assets/img/icon/why-icon-2.svg" alt="" />
+							</div>
+							<div class="content">
+								<h3 class="title">Visit Us</h3>
+								<p class="desc">
+									<span class="m1">Canada, Toronto, North</span>
+									<span class="m2">Avenue 31B</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- footer  -->
+		<footer class="ru-footer">
+			<div class="ru-container">
+				<div class="ru-footer-top">
+					<div class="ru-footer-top_left">
+						<div class="ru-footer-top_left-logo">
+							<img src="./assets/img/logo/logo-white.png" alt="logo" />
+						</div>
+						<p class="ru-footer-top_left-text">
+							"RESTURENT" is a culinary oasis dedicated to crafting delectable
+							experiences for food enthusiasts worldwide. From savory delights
+							to sweet indulgences, our company specializes in creating gourmet
+							treats that tantalize taste buds and ignite culinary passions.
+						</p>
+					</div>
+					<div class="ru-footer-top_right">
+						<div class="ru-footer-links">
+							<h3 class="ru-footer-title">Quick Links</h3>
+							<ul class="ru-footer-list">
+								<li><a class="list" href="./about-us.html">About</a></li>
+								<li><a class="list" href="./blog.html">Blog</a></li>
+								<li><a class="list" href="./service.html">Our Service</a></li>
+								<li>
+									<a class="list" href="./dishes-menu.html">Dishes service</a>
+								</li>
+								<li>
+									<a class="list" href="./service.html">Wishes service</a>
+								</li>
+							</ul>
+						</div>
+						<div class="ru-footer-links opening-hours">
+							<h3 class="ru-footer-title">Opening Hours</h3>
+							<ul class="ru-footer-hours">
+								<li>
+									<div class="list">
+										<p class="day">
+											<span class="icon"
+												><iconify-icon
+													icon="radix-icons:dot-filled"
+												></iconify-icon
+											></span>
+											<span>Sunday - Thursday</span>
+										</p>
+										<p class="time">08:00 am - 09:00pm</p>
+									</div>
+								</li>
+								<li>
+									<div class="list">
+										<p class="day">
+											<span class="icon"
+												><iconify-icon
+													icon="radix-icons:dot-filled"
+												></iconify-icon
+											></span>
+											<span>Sunday - Thursday</span>
+										</p>
+										<p class="time">08:00 am - 09:00pm</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="ru-footer-links contact">
+							<h3 class="ru-footer-title">Contact</h3>
+							<ul class="ru-footer-contact">
+								<li>
+									<a href="#">
+										<div class="lists">
+											<p class="icon">
+												<iconify-icon icon="heroicons:envelope"></iconify-icon>
+											</p>
+											<div class="content">
+												<p class="title">Email:</p>
+												<p class="value">flashmessage@gmail.com</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="lists">
+											<p class="icon">
+												<iconify-icon icon="heroicons:map-pin"></iconify-icon>
+											</p>
+											<div class="content">
+												<p class="title">Location:</p>
+												<p class="value">Dhaka, Bangladesh</p>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<!-- news letter  -->
+							<div class="fu-news-sub">
+								<form action="">
+									<h3 class="fu-news-sub-title">news letter</h3>
+
+									<div class="fu-news-sub-wrap">
+										<input
+											class="fu-news-sub-input"
+											type="email"
+											placeholder="Enter your email"
+										/>
+										<button type="submit" class="fu-news-sub-btn">
+											<iconify-icon icon="carbon:send-filled"></iconify-icon>
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ru-footer-bottom">
+					<p class="ru-footer-bottom_copy">© Copyright 2024 RESTAURANT</p>
+					<ul class="ru-footer-bottom_social">
+						<li>
+							<a href="#">
+								<iconify-icon icon="ri:facebook-fill"></iconify-icon>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<iconify-icon icon="ri:linkedin-fill"></iconify-icon>
+							</a>
+						</li>
+						<li>
+							<a href="#"> <iconify-icon icon="mdi:twitter"></iconify-icon> </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<!-- jquery  -->
+		<script src="./assets/plugin/jquery/jquery-3.7.1.min.js"></script>
+
+		<!-- bootstrap -->
+		<script src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+		<!-- swiperjs -->
+		<script src="./assets/plugin/swiperjs/swiper-bundle.min.js"></script>
+		<!-- time picker js -->
+		<script src="assets/plugin/time-picker/mdtimepicker.js"></script>
+		<!-- date picker js -->
+		<script src="assets/plugin/date-picker/js/date-picker.min.js"></script>
+		<!-- date picker en js -->
+		<script src="assets/plugin/date-picker/js/date-picker-en.js"></script>
+		<!-- js  -->
+		<script src="./assets/js/script.js"></script>
+	</body>
+</html>

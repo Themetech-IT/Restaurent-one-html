@@ -1,0 +1,182 @@
+.ru-input {
+	padding: 0 40px 0 16px;
+	border-radius: 15px;
+	background: #fff;
+	width: 100%;
+	height: 56px;
+	border: 0;
+	outline: 0;
+	transition: 0.3s ease;
+
+	&::placeholder {
+		color: #4d4d4d;
+		font-family: Inter;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 14px; /* 87.5% */
+	}
+	&:focus,
+	&:hover {
+		border-radius: 15px;
+		background: #fff;
+		box-shadow: 3px 4px 12.6px 0px rgba(198, 198, 198, 0.25);
+	}
+	@include responsive('xmd') {
+		font-size: 15px;
+	}
+}
+textarea {
+	padding: 16px 40px 16px 16px !important;
+}
+.ru-form_item label {
+	color: #000;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 36px; /* 200% */
+	margin-bottom: 15px;
+	@include responsive('xmd') {
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+}
+
+.ru-form_item-input {
+	position: relative;
+	font-size: 21px;
+	.icon {
+		position: absolute;
+		top: 50%;
+		right: 18px;
+		transform: translateY(-50%);
+		pointer-events: none;
+	}
+}
+
+.ru-form_pack {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 11px;
+	padding: 11px 7px;
+	border-radius: 16.542px;
+	border: 0.689px solid var(--Neutral-300, #eff0f6);
+	// background: var(--Neutral-100, #fff);
+	box-shadow: 0px 1.378px 8.271px 0px rgba(20, 20, 43, 0.08);
+	.icon {
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+
+		.p-title {
+			color: #455a64;
+			font-feature-settings: 'clig' off, 'liga' off;
+			font-family: 'Inter';
+			font-size: 12.406px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 13.785px; /* 111.111% */
+		}
+		.p-desc {
+			color: var(--Neutral-800, #170f49);
+			font-family: Inter;
+			font-size: 15.163px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 16.542px; /* 109.091% */
+		}
+	}
+}
+.ru-package-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	flex-wrap: wrap;
+
+	input[type='radio']:checked ~ label {
+		border-radius: 16.542px;
+		background: #ff59001c !important;
+	}
+}
+
+.ru-search-main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #4d4d4d;
+	text-align: center;
+	font-family: Cabin;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal; /* 133.333% */
+	height: 73px;
+	border-radius: 98px;
+	background: #f1f1f1;
+	padding-left: 23px;
+	padding-right: 23px;
+	max-width: 905px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 52px;
+
+	@include responsive('xmd') {
+		font-size: 15px;
+		height: 56px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	@include responsive('sm') {
+		margin-top: 30px;
+	}
+	.search {
+		flex: 1;
+		padding-left: 22px;
+		display: inline-block;
+		border: 0;
+		outline: 0;
+		background: transparent;
+
+		&[type='search']::-webkit-search-cancel-button {
+			-webkit-appearance: none; /* Remove default styling */
+			height: 27px; /* Adjust height */
+			width: 27px; /* Adjust width */
+			background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"%3E%3Cpath fill="none" d="M0 0h24v24H0z"/%3E%3Cpath fill="000" d="M18.3 5.71L16.59 4 12 8.59 7.41 4 5.7 5.71 10.29 10.3 5.7 14.89l1.71 1.71L12 12.41l4.59 4.59 1.71-1.71-4.59-4.59z"/%3E%3C/svg%3E')
+				no-repeat center center;
+
+			background-size: contain; /* Ensure icon scales properly */
+			opacity: 0.8;
+
+			@include responsive('xmd') {
+				height: 20px;
+				width: 20px;
+			}
+		}
+	}
+	.icon {
+		font-size: 24px;
+		@include responsive('xmd') {
+			font-size: 20px;
+		}
+	}
+	.close {
+		font-size: 27px;
+		@include responsive('xmd') {
+			font-size: 20px;
+		}
+	}
+}
+
+
+
+

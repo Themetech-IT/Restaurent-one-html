@@ -1,0 +1,89 @@
+.ru-reservation {
+	background: #f9f9f9;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	position: relative;
+	background: #f9f9f9;
+	box-shadow: 4px 4px 11.2px 0px rgba(208, 208, 208, 0.25);
+	.ru-reservation-bg-img {
+		position: absolute;
+		left: 0;
+		bottom: -14%;
+		user-select: none;
+	}
+	&-box {
+		background-color: rgba(0, 0, 0, 0.5);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		min-height: 415px;
+		display: flex;
+		align-items: center;
+		padding: 20px 0;
+		@include responsive('sm') {
+			text-align: center;
+		}
+		&.ru-reservation-box_margin {
+			margin-top: 72px;
+		}
+		.ru-warper {
+			max-width: 641px;
+			&.voucher2_sm {
+			}
+			.title {
+				color: #fff;
+				font-family: 'Bebas Neue';
+				font-size: 80px;
+				font-style: normal;
+				font-weight: 400;
+				margin-bottom: 12px;
+				line-height: 80px;
+				@include responsive('2xl') {
+					font-size: 60px;
+				}
+				@include responsive('lg') {
+					font-size: 40px;
+					line-height: 40px;
+				}
+			}
+			.desc {
+				color: #cdcdcd;
+				font-family: Inter;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 36px; /* 200% */
+				margin-bottom: 22px;
+				@include responsive('lg') {
+					font-size: 16px;
+					line-height: 25px;
+				}
+			}
+			.actions {
+				display: flex;
+				align-items: center;
+				gap: 22px;
+				@include responsive('sm') {
+					flex-direction: column;
+					.ru-btn {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+.ru-reservation-content {
+	margin-top: 70px;
+
+	.ru-title {
+		margin-bottom: 22px;
+		text-align: center;
+	}
+
+	.ru-desc {
+		max-width: 1110px;
+		text-align: center;
+		margin: 0 auto;
+	}
+}

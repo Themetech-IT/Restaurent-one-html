@@ -1,0 +1,322 @@
+.price_slider {
+    padding-top: 110px;
+    padding-bottom: 76px;
+    background: #f8f8f8;
+    @include responsive('sm') {
+       padding-top: 90px;
+    }
+    .mySwiper-home2 {
+        position: relative;
+        .swiper-button-prev {
+            position: absolute;
+            top: 80%;
+            left: 35px;
+            border: 2px solid #fff;
+            color: #fff;
+            border-radius: 100%;
+            font-size: 20px;
+            padding: 30px;
+
+            .prev {
+                position: absolute;
+                left: 87px;
+                top: 38%;
+                @include responsive('sm') {
+                    font-size: 16px;
+                    left: 61px;
+                    top: 30%;
+                  }
+            }
+            @include responsive('sm') {
+              padding: 20px;
+              top: 72%;
+            }
+        }
+        .swiper-button-next {
+            position: absolute;
+            top: 80%;
+            left: 316px;
+            border: 2px solid #fff;
+            color: #fff;
+            border-radius: 100%;
+            font-size: 20px;
+            padding: 30px;
+            @include responsive('sm') {
+                padding: 20px;
+                left: 226px;
+                top: 72%;
+            }
+            .next {
+                position: absolute;
+                right: 84px;
+                top: 38%;
+                @include responsive('sm') {
+                    font-size: 16px;
+                    right: 55px;
+                    top: 27%;
+                  }
+            }
+        }
+    }
+    .gift_cart_p {
+        font-family: $Inter;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 225%;
+        color: #383632;
+        margin-top: 36px;
+        @include responsive('xl') {
+			font-size: 15px;
+		}
+        @include responsive('sm') {
+			text-align: center;
+		}
+    }
+    .terms_conditin {
+        @include responsive('2xl') {
+			padding-bottom: 20px;
+		}
+        @include responsive('sm') {
+			text-align: center;
+		}
+        h5 {
+            font-family: $BebasNeue;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 212%;
+            color: #000;
+        }
+        .terms_conditin_p {
+            position: relative;
+            font-family: $Inter;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 183%;
+            color: #4d4d4d;
+            margin-bottom: 14px;
+            @include responsive('xl') {
+                font-size: 16px;
+            }
+            &:before {
+                    position: absolute;
+                    content: '';
+                    width: 6px;
+                    height: 6px;
+                    background: #000;
+                    border-radius: 100%;
+                    top: 12px;
+                    left: -14px;
+                    @media (max-width: 576px) { 
+                        display: none;
+                    }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .purchase {
+        padding-left: 20px;
+        @include responsive('xl') {
+			padding-left: 0;
+            text-align: center;
+            margin-bottom: 30px;
+		}
+        .purchase_heading {
+            font-family: $BebasNeue;
+            font-weight: 400;
+            font-size: 38px;
+            color: #000;
+            @include responsive('sm') {
+                text-align: center;
+                font-size: 33px;
+            }
+        }
+      
+        .purchase_p {
+            display: flex;
+            gap: 18px;
+            @include responsive('xl') {
+                justify-content: center;
+            }
+            @include responsive('sm') {
+                justify-content: center;
+            }
+        }
+        .d_txt {
+            padding-top: 10px;
+            font-family: $cabin;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 187%;
+            color: #4a4a4a;
+        }
+        .d_paragraph {
+            font-family: $cabin;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 167%;
+            color: #4d4d4d;
+            @include responsive('xl') {
+               font-size: 16px;
+            }
+            @media (max-width: 576px) {
+                text-align: center;
+            }
+        }
+        .dollar {
+            margin-top: 12px;
+            margin-bottom: 20px;
+            font-family: $cabin;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 125%;
+            color: #ff5900;
+        }
+        .form {
+            @media (max-width: 576px) {
+               text-align: center;
+            }
+            form {
+                .parent {
+                    @media (max-width: 576px) {
+                        display: grid;
+                    justify-content: center;
+                    }
+                    input {
+                        padding: 13px 0px 18px 13px;
+                        margin-right: 12px;
+                        margin-top: 18px;
+                        margin-bottom: 22px;
+                        width: 234px;
+                        height: 56px;
+                        border: none;
+                        outline: none;
+                        background: #fff;
+                        @media (max-width: 576px) {
+                           margin-right: 0;
+                        }
+                        &::placeholder {
+                            font-family: $cabin;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 187%;
+                            color: #4d4d4d;
+                          }
+                          @media (max-width: 576px) {
+                            display: inline-block;
+                        }
+                    }
+                    
+                    input[type=number] {
+                        &::-ms-value {
+                            font-family: var(--font5);
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 167%;
+                            color: #000;
+                        }
+                    }
+                }
+               .purchase_amount {
+                    position: relative;
+                    display: flex;
+                    gap: 80px;
+                    @include responsive('xl') {
+                       justify-content: center;
+                    }
+                    @include responsive('sm') {
+                        padding-left: 0;
+                        display: grid;
+                        gap: 30px;
+                        justify-content: center;
+                    }
+                .amount {
+                    font-family: $open_sans;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 150%;
+                    text-align: center;
+                    color: #4d4d4d;
+                    @include responsive('xl') {
+                        font-size: 15px;
+                    }
+                    @include responsive('sm') {
+                        display: inline-block;
+                    }
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        border: 1px solid #cacaca;
+                        width: 41px;
+                        height: 0px;
+                        left: 169px;
+                        top: 12px;
+                        @include responsive('xl') {
+                            display: none;
+                        }
+                        @include responsive('sm') {
+                            display: none;
+                        }
+                    }
+                }
+                .amount_mid {
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        border: 1px solid #cacaca;
+                        width: 41px;
+                        height: 0px;
+                        left: 362px;
+                        top: 12px;
+                        @include responsive('xl') {
+                            display: none;
+                        }
+                    }
+                }
+               }
+                .total_amount {
+                    margin-top: 18px;
+                    margin-bottom: 20px;
+                    font-family: $open_sans;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: #4d4d4d;
+                    @include responsive('xl') {
+                        font-size: 15px;
+                    } 
+                }
+                .purchase_btn_main {
+                    @include responsive('sm') {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    @include responsive('xl') {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .purchase_btn {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 439px;
+                        height: 56px;
+                        background: #f3c7a3;
+                        a {
+                            font-family: $open_sans;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 150%;
+                            color: #000;
+                            @include responsive('xl') {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

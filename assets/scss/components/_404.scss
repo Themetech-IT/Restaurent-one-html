@@ -1,0 +1,83 @@
+#page_404 {
+	background-image: url(/assets/img/404/404_back_img.png);
+	background-repeat: no-repeat;
+	background-position: bottom -79px right -4px;
+	padding-bottom: 112px;
+
+	@include responsive('2xl') {
+		// background-position: bottom -79px right -4px;
+		padding-bottom: 112px;
+	}
+
+	@include responsive('xl') {
+		padding-bottom: 70px;
+	}
+
+	.page1_404 {
+		.img_404 {
+			img {
+				max-width: 100% !important;
+				width: auto;
+			}
+		}
+		text-align: center;
+		margin-top: 190px;
+
+		@include responsive('2xl') {
+			margin-top: 100px;
+		}
+		@include responsive('xl') {
+			margin-top: 70px;
+		}
+	}
+	.content_404 {
+		h4 {
+			margin-top: 12px;
+			margin-bottom: 22px;
+			@include responsive('2xl') {
+				font-size: 22px;
+				margin-bottom: 10px;
+			}
+		}
+		p {
+			font-family: 'Inter';
+			font-weight: 500;
+			font-size: 24px;
+			text-align: center;
+			color: #4d4d4d;
+			@include responsive('2xl') {
+				font-size: 18px;
+			}
+		}
+		.back_btn {
+			margin-top: 40px;
+			@include responsive('2xl') {
+				margin-top: 30px;
+			}
+		}
+		.back_btn a {
+			font-family: 'Outfit', sans-serif;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 133%;
+			text-transform: capitalize;
+			text-align: center;
+			background: $back_404;
+			color: $white;
+			border-radius: 70px;
+			padding: 16px 32px;
+			transition: 0.3s ease;
+
+			@include responsive('2xl') {
+				font-size: 16px;
+				padding: 12px 30px;
+			}
+
+			&:hover {
+				background: $white;
+				color: $back_404;
+				border: 1px solid $back_404;
+			}
+		}
+	}
+}

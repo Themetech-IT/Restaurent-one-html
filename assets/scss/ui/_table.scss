@@ -1,0 +1,119 @@
+.ru-package {
+	padding-top: 70px;
+	.content-headings {
+		margin-bottom: 52px;
+		width: calc(100% - 20px);
+		.heading {
+			color: #0d0d25;
+			font-family: Inter;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 30px; /* 125% */
+			text-align: center;
+			margin-bottom: 22px;
+		}
+		.sub-text {
+			color: #4d4d4d;
+			text-align: center;
+			font-family: Inter;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 26px; /* 144.444% */
+		}
+	}
+	table {
+		// border-collapse: collapse;
+		width: 100%;
+		thead {
+			tr {
+				th {
+					padding: 15px;
+					text-align: center;
+					border: 1px dashed #d9d9d9;
+					color: #000;
+					font-feature-settings: 'clig' off, 'liga' off;
+					font-family: 'Inter';
+					font-size: 22px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: 20px; /* 90.909% */
+					white-space: nowrap;
+				}
+				&:hover {
+					background: rgba(255, 239, 234, 0.64);
+				}
+				&:nth-child(even) {
+					background: rgba(255, 239, 234, 0.64);
+				}
+			}
+		}
+
+		tbody {
+			tr {
+				td {
+					border: 1px dashed #d9d9d9;
+					padding: 15px;
+					&:first-child {
+						color: #000;
+						font-feature-settings: 'clig' off, 'liga' off;
+						white-space: nowrap;
+
+						/* Text Single/200/Regular */
+						font-family: 'Inter';
+						font-size: 18px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: 20px; /* 111.111% */
+					}
+					&:not(:first-child) {
+						text-align: center;
+					}
+				}
+				&:hover {
+					background: rgba(255, 239, 234, 0.64);
+				}
+				&:nth-child(even) {
+					background: rgba(255, 239, 234, 0.64);
+				}
+				.icon {
+					font-size: 26px;
+					color: #939393;
+					&.active {
+						color: #ff5900;
+					}
+				}
+				.res-button {
+					color: #939393;
+					min-width: 207px;
+					text-align: center;
+					font-family: Inter;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 36px; /* 200% */
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					gap: 11px;
+					padding: 10px 25px;
+					border-radius: 96px;
+					border: 1px solid #939393;
+					transition: 0.3s all;
+					.icon {
+						font-size: 24px;
+						color: inherit;
+					}
+
+					&:hover,
+					&.active {
+						background: #ff5900;
+						color: #fff !important;
+						border: 1px solid #ff5900;
+					}
+				}
+			}
+		}
+	}
+}

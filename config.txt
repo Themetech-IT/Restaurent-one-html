@@ -1,0 +1,118 @@
+how run sass ?
+sass --watch ./assets/scss/main.scss:./assets/css/style.css
+
+icon 
+<script src="../assets/js/icon/iconify-icon.min.js"></script>
+
+----------------------
+
+@media only screen and (max-width: 600px) {
+   
+}
+
+--------------------
+git ignore if multiple developer collaborate 
+/assets/css
+---------------
+
+responsive table 
+
+<div class="table-main-wrap">
+    <div class="table-responsive">
+	    <table class="table">
+        </table>
+</div>
+</div>
+
+style="border-style: hidden"
+
+ table body for loop 
+
+ <div class="d-flex align-items-center gap-3 ms-2">
+										<iconify-icon width="20" icon="uil:calender"></iconify-icon>
+										<span>2022-07-02 00:33:42</span>
+									</div>
+
+                                    
+
+ <div class="report-table-head___knmvw">
+		 <span>Affiliate Report</span>
+	</div>
+
+<div class="pb_browse_offers__table_area__table">
+										<div class="table-main-wrap">
+											<div class="table-responsive">
+												<table class="table report-table-all subid-report">
+													<thead>
+														<tr style="border-style: hidden">
+															<th>ID</th>
+															<th>Affiliate Name</th>
+															<th>Manager</th>
+															<th>Hit</th>
+															<th>Unique</th>
+															<th>Click</th>
+															<th>Conversion</th>
+															<th>Ratio</th>
+															<th>EPC</th>
+															<th>Revenue</th>
+															<th>Payout</th>
+															<th>Profit</th>
+														</tr>
+													</thead>
+													<tbody id="data-in-by-js__affiliate">
+														<script>
+															const bodyEle__affiliate =
+																document.getElementById('data-in-by-js__affiliate');
+															for (let i = 0; i <= 10; i++) {
+																const row = document.createElement('tr');
+																row.innerHTML = `
+																<tr>
+																	<td>01</td>
+																	<td>Mehedi</td>
+																	<td>Medhedi</td>
+																	<td>234</td>
+																	<td>234</td>
+																	<td>2562</td>
+																	<td>321</td>
+																	<td>63%</td>
+																	<td>0.234</td>
+																	<td>$234.23</td>
+																	<td>$234.23</td>
+																	<td>$234.23</td>
+																</tr>
+																`;
+																bodyEle__affiliate.appendChild(row);
+															}
+
+															 
+														</script>
+
+														<tr class="total-report-tr">
+															<td><span class="ms-3">Total</span></td>
+															<td></td>
+															<td></td>
+															<td>234</td>
+															<td>234</td>
+															<td>2562</td>
+															<td>321</td>
+															<td>63%</td>
+															<td>0.234</td>
+															<td>$234.23</td>
+															<td>$234.23</td>
+															<td>$234.23</td>
+														</tr>
+
+														 
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+
+
+ 
+
+
+
+

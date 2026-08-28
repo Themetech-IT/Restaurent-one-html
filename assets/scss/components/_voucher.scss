@@ -1,0 +1,140 @@
+section#gift_voucher {
+    background-image: url(/assets/img/404/v.png);
+    background-position: center;
+    padding-top: 190px;
+    padding-bottom: 64px;
+    background-position: right 35% bottom 45%;
+    .gift_voucher_content {
+        text-align: center;
+        h2 {
+            font-family: $BebasNeue;
+            font-weight: 400;
+            font-size: 80px;
+            line-height: 125%;
+            color: #4d4d4d;
+        }
+        p {
+            font-family: $Inter;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 128%;
+            letter-spacing: 0.03em;
+            color: $black;
+            span {
+                color: $back_404;
+            }
+        }
+    }
+}
+
+section#gift_card{
+
+    .gift_img img {
+        width: 100%;
+    } 
+    .gift_card_content {
+        padding-top: 25px;
+        .gift_card_content_desc {
+            margin-bottom: 15px;
+            h4 {
+                font-family: $BebasNeue;
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 106%;
+                color: $black;
+                margin-bottom: 32px;
+            }
+            p {
+                font-family: $open_sans;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 225%;
+                color: $black;
+            }
+        }    
+            .gt_contact_btn {
+                display: flex;
+                gap: 40px;
+            }
+    }
+    .gt_contact_btn {
+        margin-top: 50px;
+        .ab_res_btn a {
+            border-radius: 47px;
+            padding: 16px 32px;
+            background: $btn_background;
+            color: $white;
+        }
+        .phn_res_btn a {
+            .call_icon {
+                margin-right: 15px;
+            }
+            .phn_num {
+                font-family: $Inter;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 133%;
+                text-align: center;
+                color: #000;
+            }
+        } 
+    }
+    .res_gift_cart {
+        .res_gift_cart_content {
+            @media (max-width: 1199px) {
+               padding-bottom: 25px;
+               &.last {
+                padding-bottom: 0;
+               }
+            }
+           
+        }
+        .res_gift_cart_img {
+            position: relative;
+          
+            &::before {
+                position: absolute;
+                content: '';
+                top: 16px;
+                left: 22px;
+                width: 92px;
+                height: 92px;
+                border-radius: 100%;
+                background: $back_404;
+            }
+            .res_gift_cart_img_p {
+                position: absolute;
+                left: 45px;
+                top: 39px;
+                p {
+                    color: $white;
+                    @media (max-width: 1400px) {
+                        br {
+                            display: block;
+                        }
+                     }
+                }
+            }
+        }
+        .res_gift_cart_content {
+            h3 {
+                font-family: $BebasNeue;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 96%;
+                color: $black;
+                margin: 30px 0px 10px 0px;
+                span {
+                    color: $back_404;
+                }
+            }
+            .cart_content_btn {
+                font-family: $open_sans;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 144%;
+                color: $black;
+            }
+        }
+    }
+}

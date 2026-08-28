@@ -1,0 +1,568 @@
+.ru-about-us {
+	margin-top: 50px;
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 185px;
+		height: 279px;
+		flex-shrink: 0;
+		background-image: url('../img/icon/dis-1.png');
+		z-index: -1;
+		background-repeat: no-repeat;
+		background-position: center;
+		@include responsive('2xl') {
+			display: none;
+		}
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 185px;
+		height: 279px;
+		flex-shrink: 0;
+		background-image: url('../img/icon/dis-2.png');
+		z-index: -1;
+		background-repeat: no-repeat;
+		background-position: center;
+		@include responsive('lg') {
+			display: none;
+		}
+	}
+
+	&_content {
+		display: flex;
+		align-items: center;
+		gap: 112px;
+
+		@include responsive('2xl') {
+			gap: 50px;
+		}
+		@include responsive('lg') {
+			flex-direction: column;
+		}
+		&.video-play {
+			gap: 35px;
+			@include responsive('2xl') {
+				gap: 20px;
+			}
+			@include responsive('lg') {
+				gap: 15px;
+			}
+		}
+		&-left {
+			width: 501px;
+			height: 483px;
+			flex-shrink: 0;
+			@include responsive('2xl') {
+				width: 400px;
+				height: 383px;
+			}
+			@include responsive('lg') {
+				max-width: 100%;
+				max-height: 383px;
+				height: 100%;
+			}
+			img {
+				width: 100%;
+				// height: 483px;
+			}
+		}
+		&-right {
+			padding-right: 27px;
+			position: relative;
+			z-index: 1;
+			@include responsive('2xl') {
+				padding-right: 0px;
+			}
+			&_heading {
+				color: var(--Main-color, #0d0d25);
+				font-family: 'Bebas Neue';
+				font-size: 48px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 65px; /* 135.417% */
+				margin-top: 52px;
+				padding-right: 75px;
+				@include responsive('2xl') {
+					font-size: 36px;
+					margin-top: 35px;
+					padding-right: 0px;
+				}
+			}
+			&_desc {
+				color: #000;
+				font-family: Inter;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 36px; /* 200% */
+				margin-top: 22px;
+				@include responsive('2xl') {
+					font-size: 16px;
+					margin-top: 18px;
+				}
+			}
+			&_title {
+				color: #ff5900;
+				font-family: Inter;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 23px; /* 127.778% */
+				letter-spacing: 0.54px;
+				display: flex;
+				align-items: center;
+				gap: 7px;
+				.icon {
+					font-size: 30px;
+					font-weight: 900;
+				}
+			}
+
+			&_actions {
+				margin-top: 22px;
+				display: flex;
+				align-items: center;
+				gap: 20px;
+
+				@include responsive('sm') {
+					flex-direction: column;
+					gap: 10px;
+				}
+				.ru-btn {
+					@include responsive('sm') {
+						width: 100%;
+					}
+					&.outline {
+						color: #383632;
+						@include responsive('sm') {
+							border: 1px solid #383632;
+						}
+						&:hover {
+							border: 1px solid #383632;
+							// background: #383632;
+							// color: #fff;
+						}
+					}
+					&.fillUp {
+						background: #383632;
+						&:hover {
+							background: inherit;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.about-us-ctx {
+		.ru-about-us_content {
+			gap: 60px;
+		}
+		&::after,
+		&::before {
+			display: none;
+		}
+	}
+}
+
+.ru-inc-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 52px;
+	margin-bottom: 70px;
+	gap: 20px;
+	@include responsive('lg') {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		row-gap: 30px;
+	}
+	@include responsive('sm') {
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 10px;
+		row-gap: 20px;
+	}
+
+	.ru-counter_text-dt {
+		max-width: 340px;
+		@include responsive('lg') {
+			grid-column: span 4;
+		}
+		@include responsive('sm') {
+			grid-column: span 2;
+		}
+	}
+	.icons_texts-dt {
+		display: flex;
+		align-items: center;
+		gap: 24px;
+		img {
+			max-width: 50px;
+		}
+		.icons_texts-dt_text {
+			color: #000;
+			font-family: Inter;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 29px; /* 161.111% */
+			@include responsive('2xl') {
+				font-size: 16px;
+			}
+		}
+	}
+
+	.ru-list-counter {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 5px;
+		@include responsive('2xl') {
+			gap: 0;
+		}
+		.ru-list-counter_inc {
+			color: #000;
+			font-family: Inter;
+			font-size: 32px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 38px; /* 118.75% */
+			@include responsive('2xl') {
+				font-size: 28px;
+			}
+			@include responsive('md') {
+				font-size: 24px;
+			}
+		}
+		.ru-list-counter_text {
+			color: #000;
+			font-family: Inter;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 38px; /* 237.5% */
+			@include responsive('2xl') {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+.ru-about-hero {
+	margin-bottom: 200px;
+	margin-top: 70px;
+
+	@include responsive('2xl') {
+		margin-bottom: 150px;
+		margin-top: 50px;
+	}
+	@include responsive('lg') {
+		margin-bottom: 100px;
+		margin-top: 30px;
+	}
+	@include responsive('md') {
+		margin-bottom: 50px;
+	}
+	.ru-container {
+		position: relative;
+	}
+	&_content {
+		max-width: 868px;
+		margin-left: auto;
+
+		@include responsive('lg') {
+			max-width: 100%;
+		}
+		.main-img {
+			max-height: 608px;
+			height: 100%;
+			img {
+				@include responsive('lg') {
+					max-height: 400px;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+
+	&_wraps {
+		display: flex;
+		gap: 35px;
+		margin-left: 150px;
+		margin-top: 40px;
+		@include responsive('md') {
+			margin-left: 50px;
+			gap: 15px;
+		}
+		@include responsive('sm') {
+			margin-left: 0px;
+			flex-direction: column;
+		}
+		.h-text {
+			display: flex;
+			align-items: center;
+			gap: 6px;
+			margin-bottom: 12px;
+			@include responsive('md') {
+				margin-bottom: 8px;
+			}
+			.h-b {
+				color: #000;
+				font-family: Inter;
+				font-size: 52px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 54px; /* 103.846% */
+
+				@include responsive('2xl') {
+					font-size: 48px;
+					line-height: 44px;
+				}
+				@include responsive('md') {
+					font-size: 40px;
+					line-height: 40px;
+				}
+				@include responsive('sm') {
+					font-size: 32px;
+					line-height: 32px;
+				}
+			}
+			.h-n {
+				color: #000;
+				font-family: Inter;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 21px; /* 131.25% */
+				@include responsive('2xl') {
+					font-size: 14px;
+					line-height: 18px;
+				}
+			}
+		}
+		.h-desc {
+			color: #4d4d4d;
+			font-family: Inter;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 29px; /* 181.25% */
+			@include responsive('2xl') {
+				font-size: 14px;
+				line-height: 24px;
+			}
+		}
+	}
+	.ru-about_hero-image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+		.hero-2 {
+			width: 560px;
+			height: 608px;
+			flex-shrink: 0;
+			@include responsive('2xl') {
+				width: 450px;
+				height: 500px;
+			}
+			@include responsive('xl') {
+				width: 350px;
+				height: 400px;
+			}
+			@include responsive('lg') {
+				display: none;
+			}
+		}
+		.yr-16 {
+			width: 169px;
+			height: 210px;
+			flex-shrink: 0;
+			margin-left: 120px;
+
+			@include responsive('xl') {
+				width: 120px;
+				height: 170px;
+				object-fit: contain;
+
+				margin-left: 50px;
+			}
+			@include responsive('lg') {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+.ru-trending {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background: #fff;
+
+	@include responsive('lg') {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	@include responsive('sm') {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.ru-header-text {
+		text-align: left;
+		margin-left: 0;
+		flex: 1;
+
+		.slider-arrow {
+			display: flex;
+			align-items: center;
+			margin-top: 22px;
+			gap: 28px;
+		}
+		.ru-header-text_highlight {
+			margin-bottom: 52px;
+			margin-top: 37px;
+		}
+
+		&_highlight {
+			justify-content: flex-start;
+		}
+	}
+
+	&-slider {
+		gap: 30px;
+		display: flex;
+		@include responsive('lg') {
+			flex-direction: column;
+		}
+	}
+	.slider-box-trending {
+		flex: 1;
+		// display: flex;
+		// gap: 20px;
+
+		// .ru-articles_item {
+		// 	flex: 1;
+		// }
+		.mySwiper-about {
+			max-width: 632px;
+		}
+	}
+}
+
+.ru-gallery-img {
+	margin-bottom: 24px;
+	@include responsive('md') {
+		margin-bottom: 16px;
+	}
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 20px;
+		@include responsive('md') {
+			grid-template-columns: repeat(3, 1fr);
+		}
+		@include responsive('sm') {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		.item {
+			border-radius: 10px;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			&:first-child {
+				grid-column: span 2;
+				grid-row: span 2;
+
+				@include responsive('md') {
+					grid-column: span 1;
+					grid-row: span 1;
+				}
+				@include responsive('sm') {
+					grid-column: span 1;
+					grid-row: span 1;
+				}
+			}
+		}
+	}
+}
+
+// plans-details
+.plans-details {
+	.contents {
+		.head {
+			color: var(--Main-color, #0d0d25);
+			font-family: Inter;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 30px; /* 125% */
+			margin-bottom: 22px;
+		}
+		.sub-text {
+			color: #4d4d4d;
+			font-family: Inter;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 26px; /* 144.444% */
+			margin-bottom: 35px;
+		}
+		.list {
+			display: flex;
+			flex-direction: column;
+			gap: 22px;
+			margin-bottom: 52px;
+			padding-left: 16px;
+
+			@include responsive('md') {
+				gap: 16px;
+			}
+			li {
+				list-style: initial;
+			}
+			.text {
+				color: #4d4d4d;
+				font-family: Inter;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 30px;
+				.bolded {
+					color: #000;
+					font-family: Inter;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 600;
+					line-height: 30px; /* 166.667% */
+				}
+			}
+		}
+	}
+}
+
+// ru-badge-dt
+.ru-badge-dt {
+	padding-bottom: 70px;
+	.ru-container {
+		border-radius: 10px;
+
+		background: #dce6eb4b;
+		padding: 24px 30px;
+		.b-text {
+			color: #000;
+			font-family: Inter;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 30px; /* 125% */
+		}
+	}
+}

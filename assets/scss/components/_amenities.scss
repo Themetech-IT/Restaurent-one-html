@@ -1,0 +1,128 @@
+.ru-amenities {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	position: relative;
+	background: #f9f9f9;
+	@include responsive('xmd') {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	@include responsive('sm') {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.ru-reservation-bg-img {
+		position: absolute;
+		left: 0;
+		bottom: 11%;
+		user-select: none;
+	}
+
+	&_header {
+		max-width: 965px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		.ru-title {
+			margin-bottom: 22px;
+		}
+	}
+
+	&_container {
+		display: flex;
+		gap: 60px;
+		align-items: center;
+		margin-top: 52px;
+		@include responsive('xl') {
+			gap: 20px;
+		}
+
+		&.reverse {
+			flex-direction: row-reverse;
+			@include responsive('xmd') {
+				flex-direction: column;
+			}
+		}
+		@include responsive('xmd') {
+			flex-direction: column;
+		}
+
+		.ru-amenities_imageBox {
+			flex-shrink: 0;
+			width: 560px;
+			@include responsive('xl') {
+				width: 450px;
+			}
+			@include responsive('sm') {
+				width: 100%;
+			}
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	&_content {
+		&-title {
+			color: var(--Main-color, #0d0d25);
+			font-family: 'Bebas Neue';
+			font-size: 48px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 65px; /* 135.417% */
+			margin-bottom: 22px;
+			@include responsive('2xl') {
+				font-size: 36px;
+				margin-bottom: 18px;
+			}
+		}
+		&-desc {
+			color: #000;
+			font-family: Inter;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 36px; /* 200% */
+			@include responsive('2xl') {
+				font-size: 16px;
+			}
+		}
+
+		&-list {
+			margin-top: 32px;
+			@include responsive('2xl') {
+				margin-top: 24px;
+			}
+
+			td {
+				padding-right: 27px;
+				padding-bottom: 32px;
+				@include responsive('2xl') {
+					padding-bottom: 24px;
+				}
+				@include responsive('xl') {
+					display: block;
+					padding-right: 0;
+				}
+			}
+
+			&-item {
+				display: flex;
+				align-items: center;
+				gap: 12px;
+				color: #000;
+				font-family: Inter;
+				font-size: 18px;
+				font-weight: 500;
+				transition: 0.3s all;
+				.icon {
+					color: #ff5900;
+				}
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+}

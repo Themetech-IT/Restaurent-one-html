@@ -1,0 +1,190 @@
+.ru-lunch-and-dinner {
+	margin-top: 70px;
+	padding-bottom: 70px;
+	position: relative;
+	.submit_div {
+		margin-top: 50px;
+		@include responsive('xl') {
+			margin-top: 30px;
+		}
+	}
+	&-cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 28px;
+		@include responsive('xl') {
+			gap: 20px;
+		}
+		@include responsive('md') {
+			grid-template-columns: 1fr;
+		}
+	}
+	.ru-reservation-bg-img {
+		position: absolute;
+		left: 0;
+		bottom: -14%;
+		user-select: none;
+	}
+}
+
+.ru-lunch-item {
+	background-image: url('../img/dinner/dinner-1.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	padding: 38px 31px;
+	border-radius: 15px;
+	min-height: 610px;
+	position: relative;
+	z-index: 1;
+	@include responsive('xl') {
+		padding: 20px;
+	}
+	&::before {
+		content: '';
+		background: linear-gradient(
+			180deg,
+			rgba(27, 27, 27, 0.85) 43.08%,
+			rgba(0, 0, 0, 0.16) 93.34%
+		);
+		backdrop-filter: blur(1.5px);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 15px;
+		z-index: -1;
+	}
+	&-head {
+		color: #fff;
+		text-align: center;
+		font-family: 'Bebas Neue';
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 36px; /* 128.571% */
+		border-bottom: 1px dashed #fff;
+		padding-bottom: 17px;
+		margin-bottom: 26px;
+		.light {
+			color: #ff5900;
+		}
+		@include responsive('xl') {
+			margin-bottom: 20px;
+			padding-bottom: 12px;
+			font-size: 22px;
+		}
+	}
+
+	&-time-table {
+		display: flex;
+		align-items: center;
+		border-radius: 8px;
+		border: 1px solid #fff;
+		@include responsive('xl') {
+			flex-direction: column;
+		}
+		.text-wrap {
+			display: flex;
+			align-items: center;
+			padding: 15px 12px;
+			gap: 5px;
+			@include responsive('2xl') {
+				padding: 10px 8px;
+			}
+			@include responsive('xl') {
+				width: 100%;
+				justify-content: center;
+			}
+
+			&:first-child {
+				border-right: 1px solid #fff;
+				padding-right: 32px;
+				@include responsive('2xl') {
+					padding-right: 20px;
+				}
+				@include responsive('xl') {
+					border-right: none;
+					border-bottom: 1px solid #fff;
+				}
+			}
+		}
+		color: #fff;
+		font-family: Inter;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 29px; /* 181.25% */
+		@include responsive('2xl') {
+			font-size: 14px;
+		}
+		.icon {
+			font-size: 20px;
+		}
+	}
+	&-normal-text {
+		color: #fff;
+		font-family: Inter;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 30px; /* 166.667% */
+		margin-top: 28px;
+		@include responsive('2xl') {
+			margin-top: 20px;
+			font-size: 16px;
+		}
+	}
+	.lists-of-menus {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+		@include responsive('2xl') {
+			gap: 24px;
+		}
+		@include responsive('xl') {
+			gap: 14px;
+		}
+		&-item {
+			max-width: 350px;
+			.head {
+				color: #fff;
+				font-family: Inter;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 14px; /* 77.778% */
+				text-transform: capitalize;
+				margin-bottom: 8px;
+				@include responsive('2xl') {
+					font-size: 16px;
+				}
+			}
+			.text {
+				color: #fff;
+				font-family: Inter;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 20px; /* 125% */
+				margin-bottom: 12px;
+				@include responsive('2xl') {
+					margin-bottom: 10px;
+					font-size: 14px;
+				}
+			}
+			.desc-p {
+				color: #ff5900;
+				font-family: Inter;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 800;
+				line-height: 14px; /* 100% */
+				@include responsive('2xl') {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}

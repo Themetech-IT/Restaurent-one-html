@@ -1,0 +1,146 @@
+// ru-modal-wrap
+.ru-modal-wrap {
+	.modal-dialog {
+		max-width: 1026px;
+		width: 100%;
+	}
+	.modal-content {
+		position: relative;
+		border-radius: 23px;
+	}
+	.modal-body {
+		padding: 20px;
+		@include responsive('2xl') {
+			padding: 15px;
+		}
+	}
+	.ru-modal-sub-close {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		z-index: 999;
+		background: none;
+		border: none;
+		color: #fff;
+		font-size: 24px;
+	}
+	.ru-modal-body {
+		border-radius: 13px;
+		padding: 70px;
+		position: relative;
+		z-index: 1;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		border-radius: 13px;
+		@include responsive('2xl') {
+			padding: 50px;
+		}
+		@include responsive('sm') {
+			padding: 25px;
+		}
+		&::before {
+			border-radius: 13px;
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.5);
+			z-index: -1;
+		}
+		.contents {
+			max-width: 445px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.h-text {
+			color: #fff;
+			text-align: center;
+			font-family: 'Bebas Neue';
+			font-size: 48px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 36px; /* 75% */
+
+			@include responsive('2xl') {
+				font-size: 36px;
+				line-height: 30px;
+			}
+			.h-off {
+				color: #ff5900;
+			}
+		}
+		.h-desc {
+			color: #fff;
+			text-align: center;
+			font-family: Inter;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 36px; /* 200% */
+
+			@include responsive('2xl') {
+				font-size: 16px;
+				line-height: 26px;
+			}
+		}
+		.ru-form-group {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+			margin-top: 48px;
+			@include responsive('2xl') {
+				gap: 10px;
+				margin-top: 30px;
+			}
+
+			.btn-subscribe {
+				color: #fff;
+				font-family: Inter;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 14px; /* 87.5% */
+				border-radius: 10px;
+				background: #ff5900;
+				display: flex;
+				height: 53px;
+				justify-content: center;
+				align-items: center;
+				flex-shrink: 0;
+				width: 100%;
+
+				@include responsive('2xl') {
+					font-size: 14px;
+					line-height: 12px;
+					height: 40px;
+				}
+			}
+			.input {
+				color: #4d4d4d;
+				font-family: Inter;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 14px; /* 87.5% */
+				padding: 20px;
+				border-radius: 10px;
+				background: #fafafa;
+				width: 100%;
+				border: none;
+
+				@include responsive('2xl') {
+					font-size: 14px;
+					line-height: 12px;
+					height: 40px;
+				}
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,90 @@
+.latest_publication {
+    .latest_pub_title {
+        h3 {
+            font-family: $BebasNeue;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 75%;
+            text-align: center; 
+            color: #000;
+            margin-bottom: 22px;
+            @media (max-width: 576px) {
+               font-size: 42px;
+              }
+        }
+        p {
+            font-family: $Inter;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 200%;
+            text-align: center;
+            color: #4d4d4d;
+        }
+    }
+}
+
+.ru-articles {
+    &.bottom {
+        margin-bottom: 52px;
+    }
+    .pagination {
+        margin-top: 52px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        @media (max-width: 1400px) {
+			justify-content: start;
+		}
+        .nxt_btn {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            right: 0;
+            .p-next {
+                display: inline-block;
+                
+                @media (max-width: 1400px) {
+                   font-size: 15px;
+                }
+            }
+            .nxt-icon {
+                @media (max-width: 1400px) {
+                    font-size: 15px;
+                 }
+                 @media (max-width: 576px) {
+                    font-size: 12px;
+                 }
+            }
+        }
+        .p_list {
+            display: flex;
+            gap: 32px;
+            @media (max-width: 576px) {
+                gap: 15px;
+             }
+        }
+        li {
+            .active {
+                padding: 10px 16px;
+                background: #FF5900;
+                color: #fff !important;
+                border-radius: 100%;
+                @media (max-width: 576px) {
+                   padding: 6px 12px;
+                 }
+            }
+            a {
+                font-family: $Inter;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 143%;
+                text-align: center;
+                color: #000;
+                @media (max-width: 576px) {
+                    font-size: 12px;
+                  }
+            }
+        }
+
+        }
+}

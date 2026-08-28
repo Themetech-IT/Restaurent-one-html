@@ -1,0 +1,145 @@
+.ru-title {
+	color: #000;
+	font-family: 'Bebas Neue';
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 36px; /* 75% */
+}
+
+.ru-desc {
+	color: #4d4d4d;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 36px; /* 200% */
+}
+
+.ru-header-text {
+	max-width: 963px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 52px;
+	@include responsive('2xl') {
+		margin-bottom: 35px;
+	}
+	@include responsive('sm') {
+		margin-bottom: 25px;
+	}
+	&_title {
+		color: #000;
+		font-family: 'Bebas Neue';
+		font-size: 48px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 36px; /* 75% */
+		margin-bottom: 22px;
+		@include responsive('2xl') {
+			margin-bottom: 18px;
+			font-size: 35px;
+		}
+	}
+	&.coupon_title {
+		line-height: 106%;
+	}
+	&_desc {
+		color: #4d4d4d;
+		font-family: Inter;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 36px; /* 200% */
+		@include responsive('2xl') {
+			font-size: 16px;
+		}
+	}
+	&_highlight {
+		color: #ff5900;
+		font-family: Inter;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 23px; /* 127.778% */
+		letter-spacing: 0.54px;
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		justify-content: center;
+		margin-bottom: 22px;
+		@include responsive('2xl') {
+			font-size: 16px;
+			margin-bottom: 18px;
+		}
+	}
+}
+.ru-marquee {
+	position: relative;
+	margin-top: 70px;
+	margin-bottom: 52px;
+
+	@include responsive('2xl') {
+		margin-top: 50px;
+		margin-bottom: 35px;
+	}
+	@include responsive('lg') {
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+	.ru-bg-icon-1 {
+		position: absolute;
+		top: -285%;
+		right: 0;
+		user-select: none;
+		z-index: 111;
+	}
+	.ru-marquee-slide {
+		overflow: hidden;
+		width: 100%;
+
+		&_text {
+			color: #4d4d4d;
+			font-family: Impact;
+			font-size: 123.148px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 110.012px; /* 89.333% */
+			letter-spacing: 3.694px;
+			display: flex;
+			align-items: center;
+			gap: 36px;
+			animation: marquee 20s linear infinite;
+			padding-left: 100%;
+
+			.ru-outline-text {
+				color: #ff5900;
+				-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+				-webkit-text-stroke: 1px #ff5900;
+			}
+
+			@include responsive('2xl') {
+				font-size: 70px;
+				gap: 24px;
+				animation: marquee 15s linear infinite;
+			}
+			@include responsive('lg') {
+				gap: 16px;
+				font-size: 50px;
+				animation: marquee 10s linear infinite;
+			}
+		}
+	}
+}
+
+@keyframes marquee {
+	0% {
+		transform: translateX(0);
+		padding-left: 100%;
+	}
+
+	100% {
+		transform: translateX(-100%);
+		padding-left: 0;
+	}
+}
